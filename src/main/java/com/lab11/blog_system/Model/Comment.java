@@ -28,6 +28,7 @@ public class Comment {
     @Size(min = 10, max = 249, message = "content must be between 10 and 249 in length")
     @Column(columnDefinition = "varchar(249) not null check ( length(content) >=10)")
     private String content;
-    @Column(columnDefinition = "datetime not null")
+    @Column(columnDefinition = "date not null")
     private LocalDate commentDate;
 }
+
